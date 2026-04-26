@@ -1,6 +1,4 @@
 
--- You can define attributes in the attributes/ folder. The unique ID of the attribute will be the same as the name of the file.
-
-ATTRIBUTE.name = "Medical Knowledge"
-ATTRIBUTE.description = "Your knowledge of medicine."
-ATTRIBUTE.noStartBonus = true -- You cannot spend points to upgrade this attribute when creating the character
+ATTRIBUTE.name        = "Medical Knowledge"
+ATTRIBUTE.description = "Proficiency in field medicine, surgery, and emergency treatment. Increases the effectiveness of medical items and reduces treatment time."
+ATTRIBUTE.noStartBonus = true
