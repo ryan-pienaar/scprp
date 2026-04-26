@@ -6,6 +6,7 @@ FACTION.description        = "Armed security personnel responsible for maintaini
 FACTION.color              = Color(70, 130, 180)
 FACTION.pay                = 75
 FACTION.weapons            = {"weapon_pistol"}
+FACTION.isWhitelist         = true
 FACTION.isGloballyRecognized = true
 FACTION.models             = {
     "models/player/police.mdl",

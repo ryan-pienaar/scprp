@@ -6,6 +6,7 @@ FACTION.description        = "Mobile Task Force Nu-7 specialises in the defence 
 FACTION.color              = Color(20, 60, 140)
 FACTION.pay                = 150
 FACTION.weapons            = {"weapon_pistol", "weapon_smg1"}
+FACTION.isWhitelist          = true
 FACTION.isGloballyRecognized = true
 FACTION.models             = {
     "models/player/combine_soldier.mdl",

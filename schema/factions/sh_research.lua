@@ -5,6 +5,7 @@ FACTION.name               = "Research Department"
 FACTION.description        = "Foundation scientists tasked with studying, documenting, and understanding anomalous entities and objects. Responsible for maintaining and improving containment procedures through empirical observation."
 FACTION.color              = Color(200, 210, 240)
 FACTION.pay                = 100
+FACTION.isWhitelist          = true
 FACTION.isGloballyRecognized = true
 FACTION.models             = {
     "models/player/kleiner.mdl",

@@ -5,6 +5,7 @@ FACTION.name               = "Engineering & Technical Services"
 FACTION.description        = "Facility maintenance and technical personnel responsible for infrastructure, SCP containment systems, power management, and emergency repairs. Without ETS, the site cannot function."
 FACTION.color              = Color(210, 160, 30)
 FACTION.pay                = 75
+FACTION.isWhitelist          = true
 FACTION.isGloballyRecognized = true
 FACTION.models             = {
     "models/player/odessa.mdl",

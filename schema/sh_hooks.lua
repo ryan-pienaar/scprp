@@ -22,3 +22,16 @@ end
 function Schema:PlayerShouldTakeDamage(client, attacker)
     return nil
 end
+
+-- Block class selection for factions the player is not whitelisted for.
+-- Fires on both client (filters character creation UI) and server (enforces security).
+function Schema:CanPlayerJoinClass(client, index, class)
+    if not class or not class.faction then return end
+    local factionList = ix.faction and ix.faction.list
+    local faction = factionList and factionList[class.faction]
+    if not faction or not faction.isWhitelist then return end
+
+    if not ix.whitelist.HasAccess(client, class.faction) then
+        return false
+    end
+end

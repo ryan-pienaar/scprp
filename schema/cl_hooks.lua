@@ -1,7 +1,8 @@
 
 -- Welcome message with faction and clearance information.
 function Schema:CharacterLoaded(character)
-    local faction = ix.faction.list[character:GetFaction()]
+    local factionList = ix.faction and ix.faction.list
+    local faction = factionList and factionList[character:GetFaction()]
     local level   = character:GetClearanceLevel()
     local label   = ix.keycard and ix.keycard.GetLabel(level) or "UNCLASSIFIED"
 
@@ -11,6 +12,12 @@ function Schema:CharacterLoaded(character)
         " | Clearance: Level " .. level .. " [" .. label .. "]"
     )
 end
+
+-- Receive whitelisted faction data synced from the server.
+net.Receive("scprp_whitelist_sync", function()
+    ix.whitelist = ix.whitelist or {}
+    ix.whitelist.clientData = net.ReadTable()
+end)
 
 -- Hide weapon ammo HUD for SCP entities — they don't use conventional weapons.
 function Schema:HUDShouldDraw(element)

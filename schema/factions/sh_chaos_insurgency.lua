@@ -6,6 +6,7 @@ FACTION.description        = "A splinter cell of former Foundation operatives wh
 FACTION.color              = Color(140, 20, 20)
 FACTION.pay                = 50
 FACTION.weapons            = {"weapon_pistol", "weapon_ar2"}
+FACTION.isWhitelist          = true
 FACTION.isGloballyRecognized = false
 FACTION.models             = {
     "models/player/combine_soldier.mdl",

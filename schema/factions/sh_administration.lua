@@ -6,6 +6,7 @@ FACTION.description        = "The highest authority within the facility. Site Di
 FACTION.color              = Color(200, 170, 30)
 FACTION.pay                = 250
 FACTION.weapons            = {"weapon_pistol"}
+FACTION.isWhitelist          = true
 FACTION.isGloballyRecognized = true
 FACTION.models             = {
     "models/player/magnusson.mdl",

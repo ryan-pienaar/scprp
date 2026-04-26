@@ -6,6 +6,7 @@ FACTION.description        = "Mobile Task Force Epsilon-11 handles internal secu
 FACTION.color              = Color(180, 20, 20)
 FACTION.pay                = 175
 FACTION.weapons            = {"weapon_pistol", "weapon_smg1"}
+FACTION.isWhitelist          = true
 FACTION.isGloballyRecognized = true
 FACTION.models             = {
     "models/player/combine_super_soldier.mdl",
