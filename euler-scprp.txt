@@ -1,8 +1,8 @@
 
-"skeleton"
+"euler-scprp"
 {
 	"base" 			"helix"
-	"title" 		"Skeleton"
+	"title" 		"SCP-RP"
 	"author" 		"nebulous"
 	"menusystem"	"1"
 }
