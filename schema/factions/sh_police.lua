@@ -1,17 +1,15 @@
 
--- Since this faction is not a default, any player that wants to become part of this faction will need to be manually
--- whitelisted by an administrator.
+-- Foundation Security Department (GENSEC) — armed guards protecting the facility interior.
 
-FACTION.name = "Police"
-FACTION.description = "Very angry policemen that have a tendency to injure people."
-FACTION.color = Color(20, 120, 185)
-FACTION.pay = 10 -- How much money every member of the faction gets paid at regular intervals.
-FACTION.weapons = {"weapon_pistol"} -- Weapons that every member of the faction should start with.
-FACTION.isGloballyRecognized = true -- Makes it so that everyone knows the name of the characters in this faction.
-
--- Note that FACTION.models is optional. If it is not defined, it will use all the standard HL2 citizen models.
-FACTION.models = {
-	"models/police.mdl"
+FACTION.name               = "Foundation Security Department"
+FACTION.description        = "Armed security personnel responsible for maintaining order, guarding D-Class, securing checkpoints, and providing the first line of defence against anomalous threats and external incursions."
+FACTION.color              = Color(70, 130, 180)
+FACTION.pay                = 75
+FACTION.weapons            = {"weapon_pistol"}
+FACTION.isGloballyRecognized = true
+FACTION.models             = {
+    "models/player/police.mdl",
+    "models/player/combine_soldier.mdl",
 }
 
-FACTION_POLICE = FACTION.index
+FACTION_SECURITY = FACTION.index

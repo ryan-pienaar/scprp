@@ -1,12 +1,12 @@
 
-CLASS.name = "Police Chief"
-CLASS.faction = FACTION_POLICE
+-- D-Class Lead — trusted D-Class with minor supervisory responsibilities.
 
--- This function will be called whenever the client wishes to become part of this class. If you'd rather have it so this class
--- has to be set manually by an administrator, you can simply return false to disallow regular users switching to this class.
--- Note that CLASS.isDefault does not add a whitelist like FACTION.isDefault does, which is why we need to use CLASS:OnCanBe.
-function CLASS:OnCanBe(client)
-	return false
-end
+CLASS.name        = "D-Class Lead"
+CLASS.description = "A D-Class individual who has demonstrated exceptional survivability and compliance. Entrusted with minor oversight of other D-Class personnel during testing."
+CLASS.faction     = FACTION_DCLASS
+CLASS.clearance   = 0
+CLASS.health      = 110
+CLASS.armor       = 0
+CLASS.pay         = 5
 
-CLASS_POLICE_CHIEF = CLASS.index
+CLASS_DCLASS_LEAD = CLASS.index

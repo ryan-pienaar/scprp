@@ -1,9 +1,12 @@
 
--- You can define additional "sub-factions" called classes. These provide a way to differentate different types of characters
--- that still belong to the same class. Much of the same concepts from factions apply to classes.
+-- D-Class Personnel — the default class for all new players.
 
-CLASS.name = "Police Recruit"
-CLASS.faction = FACTION_POLICE
-CLASS.isDefault = true
+CLASS.name        = "D-Class Personnel"
+CLASS.description = "A condemned individual assigned to the D-Class programme. Participate in testing, follow directives, and survive."
+CLASS.faction     = FACTION_DCLASS
+CLASS.isDefault   = true
+CLASS.clearance   = 0
+CLASS.health      = 100
+CLASS.armor       = 0
 
-CLASS_POLICERECRUIT = CLASS.index
+CLASS_DCLASS = CLASS.index

@@ -1,15 +1,28 @@
 
--- You can define factions in the factions/ folder. You need to have at least one faction that is the default faction - i.e the
--- faction that will always be available without any whitelists and etc.
+-- D-Class Personnel — the only faction available to all players by default.
+-- Condemned individuals conscripted into Foundation testing programmes.
 
-FACTION.name = "Citizen"
-FACTION.description = "An oppressed group of people forced to wear ridiculous blue jumpsuits."
-FACTION.isDefault = true
-FACTION.color = Color(100, 60, 60)
+FACTION.name        = "D-Class Personnel"
+FACTION.description = "Condemned criminals and expendable test subjects conscripted by the Foundation. You are expected to comply with all directives from authorized staff. Non-compliance is dealt with harshly."
+FACTION.isDefault   = true
+FACTION.color       = Color(255, 140, 0)
+FACTION.pay         = 0
+FACTION.models      = {
+    "models/player/group01/male_01.mdl",
+    "models/player/group01/male_02.mdl",
+    "models/player/group01/male_03.mdl",
+    "models/player/group01/male_04.mdl",
+    "models/player/group01/male_05.mdl",
+    "models/player/group01/male_06.mdl",
+    "models/player/group01/male_07.mdl",
+    "models/player/group01/male_08.mdl",
+    "models/player/group01/male_09.mdl",
+    "models/player/group01/female_01.mdl",
+    "models/player/group01/female_02.mdl",
+    "models/player/group01/female_03.mdl",
+    "models/player/group01/female_04.mdl",
+    "models/player/group01/female_05.mdl",
+    "models/player/group01/female_06.mdl",
+}
 
--- You should define a global variable for this faction's index for easy access wherever you need. FACTION.index is
--- automatically set, so you can simply assign the value.
-
--- Note that the player's team will also have the same value as their current character's faction index. This means you can use
--- client:Team() == FACTION_CITIZEN to compare the faction of the player's current character.
-FACTION_CITIZEN = FACTION.index
+FACTION_DCLASS = FACTION.index
